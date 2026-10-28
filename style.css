@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container {
+width: 100%;
+height: 100vh;
+background-image: url(image.png);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+.content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+color: #fff;
+}
+
+.content h1 {
+font-size: 60px;
+font-weight: 600;
+}
+
+.content h1 span {
+color: #ff3c7b;
+}
+
+.content button {
+background: transparent;
+border: 1px solid #fff;
+padding: 15px 30px;
+border-radius: 30px;
+color: #fff;
+font-size: 14px;
+margin-top: 25px;
+cursor: pointer;
+display: inline-flex;
+align-items: center;
+}
+
+.content button img {
+width: 15px;
+margin-left: 10px;
+}
+
+.launch-time {
+display: flex;
+margin: 20px 0;
+}
+
+.launch-time div {
+flex-basis: 100px;
+}
+
+.launch-time div p {
+font-size: 60px;
+margin-bottom: -14px;
+}
+
+.rocket {
+width: 250px;
+position: absolute;
+right: 10%;
+bottom: 0;
+animation: rocket 5s linear infinite;
+}
+
+@keyframes rocket {
+0% {bottom: 0; opacity: 0;}
+100% {bottom: 105%; opacity: 1;}
+}
